@@ -5,9 +5,9 @@
 %
 clear all;
 %read raw data
-AES=readtable("newEOTBData_Patapsco_AES_25May16_TO_17Jun26.csv");
-AEB=readtable("newEOTBData_Patapsco_AEB_25May16_TO_17Jun26.csv");
-new_weather=readtable("Weather_data_25May2016-17June2026.txt");
+AES=readtable("EOTBData_AES_25May16_TO_31Jul26.csv");
+AEB=readtable("EOTBData_AEB_25May16_TO_31Jul26.csv");
+new_weather=readtable("Weather_data_25May2016-31Jul2026.csv");
 %make into a time table and interpolate at 15 minute intervals
 weather_TT=table2timetable(new_weather);
 startTimet=weather_TT.Date(1);
